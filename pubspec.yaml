@@ -2,7 +2,7 @@ name: notify_inapp
 description: show custom in-app notification with any Widgets.
 version: 0.0.1
 homepage: https://github.com/jiang111/notify_inapp
-
+publish_to: https://pub.dartlang.org
 environment:
   sdk: ">=2.12.0 <3.0.0"
   flutter: ">=1.17.0"
