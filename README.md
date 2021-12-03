@@ -50,4 +50,7 @@ notify.dismiss();
 |topOffset| Height from screen top | 40
 |dismissDirectly| not show animation when closing notification | false
 | disableDrag | disable Drag down | false
-         
+       
+## Warning
+
+notifcation will never dismiss automatically when keepDuration is zero

@@ -48,7 +48,8 @@ class Notify {
       throw ArgumentError("you shuold call dismiss() firstly");
     }
 
-    final OverlayState? overlayState = Overlay.of(context, rootOverlay: rootNavigator ?? false);
+    final OverlayState? overlayState =
+        Overlay.of(context, rootOverlay: rootNavigator ?? false);
 
     _overlayEntry = OverlayEntry(
       builder: (BuildContext context) => NotifyWidget(
@@ -120,7 +121,8 @@ class NotifyWidget extends StatefulWidget {
   State<NotifyWidget> createState() => _NotifyWidgetState();
 }
 
-class _NotifyWidgetState extends State<NotifyWidget> with SingleTickerProviderStateMixin {
+class _NotifyWidgetState extends State<NotifyWidget>
+    with SingleTickerProviderStateMixin {
   AnimationController? _playController;
   double _offset = -1000;
   double begin = -1000;
