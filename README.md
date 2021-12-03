@@ -10,7 +10,7 @@ Add this to your package's `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  notify_inapp: ^0.0.1
+  notify_inapp: ^0.0.3
 ```
 
 

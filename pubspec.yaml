@@ -1,6 +1,6 @@
 name: notify_inapp
 description: show custom in-app notification with any Widgets.
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/jiang111/notify_inapp
 publish_to: https://pub.dartlang.org
 environment:
