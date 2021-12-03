@@ -294,7 +294,9 @@ class _NotifyWidgetState extends State<NotifyWidget> with SingleTickerProviderSt
   }
 
   void _ready2DismissOverlay() {
-    _t = Timer(Duration(milliseconds: widget.keepDuration), _close);
+    if (widget.keepDuration > 0) {
+      _t = Timer(Duration(milliseconds: widget.keepDuration), _close);
+    }
   }
 
   void _cancelT() {

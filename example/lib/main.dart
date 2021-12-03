@@ -39,6 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
     notify!.show(
       context,
       view(),
+      keepDuration: 0,
     );
   }
 
