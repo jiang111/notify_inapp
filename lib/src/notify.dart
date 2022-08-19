@@ -1,8 +1,6 @@
 import 'dart:async';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 /// @author newtab on 2021/12/2
 
@@ -48,8 +46,7 @@ class Notify {
       throw ArgumentError("you shuold call dismiss() firstly");
     }
 
-    final OverlayState? overlayState =
-        Overlay.of(context, rootOverlay: rootNavigator ?? false);
+    final OverlayState? overlayState = Overlay.of(context, rootOverlay: rootNavigator ?? false);
 
     _overlayEntry = OverlayEntry(
       builder: (BuildContext context) => NotifyWidget(
@@ -121,8 +118,7 @@ class NotifyWidget extends StatefulWidget {
   State<NotifyWidget> createState() => _NotifyWidgetState();
 }
 
-class _NotifyWidgetState extends State<NotifyWidget>
-    with SingleTickerProviderStateMixin {
+class _NotifyWidgetState extends State<NotifyWidget> with SingleTickerProviderStateMixin {
   AnimationController? _playController;
   double _offset = -1000;
   double begin = -1000;
@@ -143,7 +139,7 @@ class _NotifyWidgetState extends State<NotifyWidget>
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance?.endOfFrame.then((timeStamp) {
+    WidgetsBinding.instance.endOfFrame.then((timeStamp) {
       final box = childKey.currentContext?.findRenderObject() as RenderBox;
       childHeight = box.size.height;
       _offset = -1 * childHeight;
